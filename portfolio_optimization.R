@@ -1,4 +1,20 @@
 
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(nlme)
+library(tibble)
+library(purrr)
+library(splines)
+library(lubridate)
+
+
+library(mvtnorm)
+
+# fPortfolio
+library(fPortfolio)
+library(timeSeries)
 # Sharpe Ratio ####
 stock_n = 5
 days_n = 250
@@ -115,7 +131,6 @@ sum(optimum_weights$par)
 
 # mvtnorm ####
 
-library(mvtnorm)
 mu = c(0.001, 0.003, 0.002)
 sigma = matrix(c(0.03, 0.015, 0.005, 
                  0.015, 0.004, 0.002, 
@@ -132,10 +147,8 @@ cov(log_returns)
 ?as.timeSeries
 
 # Using fPortfolio ####
-install.packages('fPortfolio')
-install.packages("timeSeries")  # Install the package
-library(fPortfolio)
-library(timeSeries)             # Load the package
+# install.packages('fPortfolio')
+# install.packages("timeSeries")  # Install the package
 
 # Example usage
 data <- matrix(rnorm(100), ncol = 5)  # Create example data
@@ -164,3 +177,77 @@ frontier@portfolio
 targ_ret = getTargetReturn(frontier)
 targ_risk = getTargetRisk(frontier)
 plot(targ_risk[,2], targ_ret[,1], type='l')
+
+# Set up current portfolio meta information ####
+tickers = c('BMW', 'EUNL', 'EXS1', 'SXRI', 'MBG', 'SXR8')
+file_names = sp_folder = list.files(paste0(getwd(), '/security_prices'))
+allocation = c(8.4, 3.5, 9.8, 4.9, 11.5, 6.6)
+current_portfolio = data.frame(security = tickers, account = allocation, file_name = file_names)
+current_portfolio = current_portfolio %>%
+  mutate(weight = account / sum(account))
+current_portfolio
+sum(current_portfolio$weight)
+
+getwd()
+setwd('C:\\Users\\pat_h\\OneDrive\\p-spohr-repos\\Optimisfits')
+
+# Get log returns ####
+
+price_to_log_returns = function(parent_dir, file_name) {
+  rel_path = paste0(parent_dir, '/', file_name)
+  hist_price = read.csv(file = rel_path) %>%
+    select(-3, -4, -5, -6, -7)
+  colnames(hist_price) = c('Date', 'Price')
+  hist_price$Date <- as.Date(hist_price$Date, format="%d.%m.%Y")
+  hist_price[,2] = as.numeric(lapply(hist_price[,2], gsub, pattern = ',', replacement = '.'))
+  
+  # get log returns
+  ticker = unlist(strsplit(file_name, split = '[.]'))[1]
+  hist_price = hist_price[order(hist_price$Date),]
+  log_ret = hist_price[-1,]
+  log_ret[,2] = diff(log(hist_price[,2]))
+  colnames(log_ret) = c('Date', ticker)
+  return(log_ret)
+  
+}
+
+daily_log_returns = tibble(Date = seq(ymd('2017-01-01'), ymd('2026-01-01'), by='day'))
+head(daily_log_returns)
+for(f_name in current_portfolio$file_name) {
+  log_ret = price_to_log_returns('security_prices', f_name)
+  daily_log_returns = left_join(daily_log_returns, log_ret, by='Date')
+  
+}
+
+daily_log_returns = na.omit(daily_log_returns)
+head(daily_log_returns)
+
+# Transform
+time_series_data <- as.timeSeries(daily_log_returns)  # Convert to timeSeries object
+head(time_series_data)
+
+procentage_daily_returns = time_series_data * 100
+head(procentage_daily_returns)
+
+# Portfolio specifications
+spec <- portfolioSpec()
+setOptimize(spec) <- 'maxSharpeRatio'
+print(spec)
+setop
+setRiskFreeRate(spec) <- 0.01  # Set risk-free rate
+
+# Constraints
+constraints <- "LongOnly"
+
+# Calculate efficient frontier
+frontier <- portfolioFrontier(procentage_daily_returns, spec, constraints)
+
+# Plot the efficient frontier
+plot(frontier, c(1,2,3,4))
+
+optimum_weights = getWeights(frontier)
+optimum_weights
+getPortfolio(frontier)
+frontier@data
+
+portfolioSpec(frontier)
