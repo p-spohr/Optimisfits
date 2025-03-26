@@ -60,3 +60,17 @@ for(fp in csv_file_names) {
   df[[2]] = as.numeric(lapply(df[[2]], gsub, pattern = ',', replacement = '.'))
   write.csv(df, paste0(new_folder, '/', fp), row.names = FALSE)
 }
+
+# clean original portfolio prices ####
+##########################
+
+target_folder = 'original_portfolio_prices'
+csv_file_names = list.files(target_folder)
+new_folder = 'original_portfolio_prices_cleaned'
+
+for(fp in csv_file_names) {
+  df = read.csv(paste0(target_folder, '/', fp), sep = ',')
+  df[[1]] = as.Date(df[[1]], format = '%d.%m.%Y')
+  df[[2]] = as.numeric(lapply(df[[2]], gsub, pattern = ',', replacement = '.'))
+  write.csv(df, paste0(new_folder, '/', fp), row.names = FALSE)
+}

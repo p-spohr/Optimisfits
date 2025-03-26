@@ -1,0 +1,53 @@
+Port,Ticker,Target,Class,Sector,Name
+1,DIA,,ETF,Industrials,SPDR Dow Jones Industrial Average ETF Trust
+1,HEAL,,ETF,Healthcare,iShares Healthcare Innovation UCITS ETF
+1,IDNA,,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF
+1,INDGW,,ETF,Industrials,Amundi S&P Global Industrials ESG UCITS ETF
+1,MXI,,ETF,Materials,iShares Global Materials ETF
+1,STPX,,ETF,Materials,SPDR MSCI Europe Materials UCITS ETF
+1,SXRI,,Bond,Corporate,iShares EUR High Yield Corporate Bond UCITS ETF
+1,US674599CL77,,Bond,Energy,OCCIDENTAL PET. 16/47
+1,XS1463155348,,Bond,Telecomunication,"VG $45m,4.6%"
+1,US097023BL86,,Bond,Aerospace,"Boeing,3.5%,1mar2045"
+1,US01609WAW29,,Bond,Multifaced Conglomerate,BABA 4.400% 06Dec2057 Corp (USD)
+1,XS1584040445,,Bond,Finance,International bank for Reconstruction and Development 
+1,US002824BH26,,Bond,Helathcare,"Abbott Laboratories, 4.900%, Due 2046"
+1,XAG-USD,,Com,Com,Silver Spot US Dollar
+1,XAU-USD,,Com,Gold,Gold Spot US Dollar
+1,XPT-USD,,Com,Platinum,Platinum Spot US Dollar
+1,LTC-USD,,Crypto,Crypto,Litecoin
+1,ETH-USD,,Crypto,Crypto,Ethereum
+1,BTC-USD,,Crypto,Crypto,Bitcoin
+1,EXS1,,ETF,Big Blend,iShares Core DAX UCITS ETF (DE)
+1,EUNL,,ETF,World,iShares Core MSCI World UCITS ETF
+1,SXR8,,ETF,Big Blend,iShares Core S&P 500 UCITS ETF
+1,AMEM,,ETF,Real Estate,Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR
+1,D5BK,,ETF,Real Estate,Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C
+1,EEM,,ETF,Emerging Markets,iShares MSCI Emerging Markets ETF
+1,EWJ,,ETF,Emerging Markets,iShares MSCI Japan ETF
+1,IWM,,ETF,Small Blend,iShares Russell 2000 ETF
+1,MCHI,,ETF,Emerging Markets,iShares MSCI China ETF
+1,QQQ,,ETF,Technology,Invesco QQQ Trust
+1,SPYN,,ETF,Energy,SPDR® MSCI Europe Energy UCITS ETF
+1,XLE,,ETF,Energy,The Energy Select Sector SPDR® Fund
+1,XLK,,ETF,Technology,The Technology Select Sector SPDR® Fund
+1,IWM,,ETF,Small Blend,iShares Russell 2000 ETF
+1,VIOO,,ETF,Small Blend,Vanguard S&P Small-Cap 600 Index Fund ETF
+1,BMW,,Stock,Auto,Bayerische Motoren Werke Aktiengesellschaft (BMW.DE)
+1,MBG,,Stock,Auto ,Mercedes-Benz Group AG
+1,AAPL,,Stock,Technology,Apple Inc.
+1,AMD,,Stock,Technology,"Advanced Micro Devices, Inc."
+1,GOOGL,,Stock,Technology,Alphabet Inc.
+1,SON1,,Stock,Technology,Sony Group Corp
+1,SSUN,,Stock,Technology,Samsung Electronics 1 GDS Representing 25 Ord Shs
+1,TOMA,,Stock,Auto,Toyota Motor Corp
+1,V,,Stock,Financial,Visa Inc.
+1,XOM,,Stock,Energy,Exxon Mobil Corp
+1,CVX,,Stock,Energy,Chevron Corp.
+1,NEE,,Stock,Energy,NextEra Energy Inc
+1,ORSTED,,Stock,Energy,Oersted AS
+1,SIE,,Stock,Energy,Siemens Aktiengesellschaft
+1,EQIX,,Stock,Real Estate,Equinix Inc
+1,TTDKY,,Stock,Asia,TDK Corporation
+1,000660.KS,,Stock,Asia,SK hynix Inc.
+1,MELI,,Stock,Small Cap,MercadoLibre

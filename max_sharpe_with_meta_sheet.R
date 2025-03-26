@@ -5,18 +5,31 @@ library(ggplot2)
 library(tibble)
 library(lubridate)
 
-all_parent_dir = 'all_cleaned_prices_test'
+getwd()
+
+# Get all price csv files available ####
+###############################
+
+all_parent_dir = 'all_cleaned_prices_for_meta'
 path_to_all = paste0(getwd(), '/', all_parent_dir)
 all_security_csv = list.files(path_to_all)
 
-target_port_csv = 'portfolio_v1.csv'
-port_meta = read.csv(paste0(getwd(), '/', target_port_csv))
+# Select the current portfolio ####
+###################################
 
+target_port_csv = 'portfolio_base.csv'
+port_meta = read.csv(paste0(getwd(), '/', 'portfolio_metas', '/', target_port_csv))
+head(port_meta)
+
+# filter based on current security choices 
 target_portfolio = port_meta %>%
   filter(Port == 1)
 
+# number of securities in current portfolio
 n_stocks = length(target_portfolio$Ticker)
 
+# Prepare log returns for each security ####
+############################################
 price_to_log_returns = function(parent_dir, file_name) {
   
   rel_path = paste0(parent_dir, '/', file_name)
@@ -39,23 +52,30 @@ price_to_log_returns = function(parent_dir, file_name) {
   return(log_ret)
   
 }
-target_portfolio$Ticker
+
+# Join the log returns into one data frame #####
 daily_log_returns = tibble(Date = seq(ymd('2017-01-01'), ymd('2026-01-01'), by='day'))
 head(daily_log_returns)
 for(ticker in target_portfolio$Ticker) {
   f_name = paste0(ticker, '.', 'csv' )
+  
+  # get log returns for security
   log_ret = price_to_log_returns(all_parent_dir, f_name)
+  
+  # join the security's log returns along Date column
   daily_log_returns = left_join(daily_log_returns, log_ret, by='Date')
   
 }
 
+# remove NA to keep data uniform
 daily_log_returns = na.omit(daily_log_returns)
 head(daily_log_returns)
 dim(daily_log_returns)
-# apply(daily_log_returns[-1], 2, sum)
-# plot(daily_log_returns$Date, exp(cumsum(daily_log_returns$AAPL)), type='l')
 
-opt_sharpe_ratio_p = function(par, stock_returns, rfr) {
+# Sharpe ratio function to pass into optimizer ####
+###################################################
+
+opt_sharpe_ratio = function(par, stock_returns, rfr) {
   # print(par)
   # yearly portfolio return
   portfolio_return = mean(stock_returns %*% par) * 250
@@ -77,10 +97,19 @@ opt_sharpe_ratio_p = function(par, stock_returns, rfr) {
   # the negated function's minimum is its maximum
   return(-(sharp_r - penalty))
 }
-stock_n = ncol(daily_log_returns) - 1
-initial_values_p = c(rep(1/stock_n,stock_n))
-lower_b_p = port_meta$Target - 0.02
-upper_b_p = port_meta$Target + 0.02
+
+# Optimize the current portfolio by maximizing the Sharpe ratio ####
+####################################################################
+
+# initial weights
+initial_weights = c(rep(1/n_stocks, n_stocks))
+
+# lower and upper bounds of the weights
+target_portfolio$Target = rep(0.5, n_stocks)
+lower_b = target_portfolio$Target - 0.4
+upper_b = target_portfolio$Target + 0.20
+
+# Riskfree rate
 RFR = log(1.0001)*250
 
 
@@ -88,17 +117,16 @@ mat_daily_log_returns = as.matrix(daily_log_returns[-1])
 
 head(mat_daily_log_returns)
 
-optimum_weights = optim(initial_values_p, 
-                        opt_sharpe_ratio_p, 
+optimum_weights = optim(initial_weights, 
+                        opt_sharpe_ratio, 
                         stock_returns = mat_daily_log_returns, 
                         rfr = RFR, 
                         method = 'L-BFGS-B',
-                        lower = lower_b_p,
-                        upper = upper_b_p)
+                        lower = lower_b,
+                        upper = upper_b)
 #control = list(fnscale=-1) another way to maximize besides negating function
 
 print(optimum_weights$par)
-optimum_weights
 sum(optimum_weights$par)
 
 
