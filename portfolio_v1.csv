@@ -1,0 +1,50 @@
+Port,Ticker,Target,Class,Sector,Name
+0,US675599CL77,,Bond,Energy,OCCIDENTAL PET. 16/47
+0,XS1463155348,,Bond,Telecomunication,"VG $45m,4.6%"
+0,US097023BL86,,Bond,Aerospace,"Boeing,3.5%,1mar2045"
+0,XS3027211575,,Bond,Finance,"Nordic Investment Bank (NIB), 5.42%, 17mar2045, USD"
+0,XS3009557466,,Bond,Finance,"Municipality Finance PLC, 25/40, 3.428%,C"
+0,US002824BH26,,Bond,Helathcare,"Abbott Laboratories, 4.900%, Due 2046"
+0,XAG/USD,,Com,Silver,Silver Spot US Dollar
+0,XAU/USD,,Com,Gold,Gold Spot US Dollar
+0,XPT/USD,,Com,Platinum,Platinum Spot US Dollar
+0,LTC,,Crypto,Crypto,Litecoin
+0,ETH,,Crypto,Crypto,Ethereum
+0,BTC,,Crypto,Crypto,Bitcoin
+1,AMEM,,ETF,Real Estate,Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR
+1,D5BK,,ETF,Real Estate,Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C
+1,EEM,,ETF,Emerging Markets,iShares MSCI Emerging Markets ETF
+1,EWJ,,ETF,Emerging Markets,iShares MSCI Japan ETF
+1,IWM,,ETF,Small Blend,iShares Russell 2000 ETF
+1,MCHI,,ETF,Emerging Markets,iShares MSCI China ETF
+1,QQQ,,ETF,Technology,Invesco QQQ Trust
+1,SPYN,,ETF,Energy,SPDR® MSCI Europe Energy UCITS ETF
+1,XLE,,ETF,Energy,The Energy Select Sector SPDR® Fund
+1,XLK,,ETF,Technology,The Technology Select Sector SPDR® Fund
+0,DIA,,ETF,Industrials,SPDR Dow Jones Industrial Average ETF Trust
+1,EXS1,,ETF,Big Blend,iShares Core DAX UCITS ETF (DE)
+1,HEAL,,ETF,Healthcare,iShares Healthcare Innovation UCITS ETF
+1,IDNA,,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF
+1,INDGW,,ETF,Industrials,Amundi S&P Global Industrials ESG UCITS ETF
+1,IWM,,ETF,Small Blend,iShares Russell 2000 ETF
+1,MXI,,ETF,Materials,iShares Global Materials ETF
+1,STPX,,ETF,Materials,SPDR MSCI Europe Materials UCITS ETF
+1,VIOO,,ETF,Small Blend,Vanguard S&P Small-Cap 600 Index Fund ETF
+0,AAPL,,Stock,Technology,Apple Inc.
+0,AMD,,Stock,Technology,"Advanced Micro Devices, Inc."
+0,BMW,,Stock,Auto,Bayerische Motoren Werke Aktiengesellschaft (BMW.DE)
+0,GOOGL,,Stock,Technology,Alphabet Inc.
+0,MBG,,Stock,Auto ,Mercedes-Benz Group AG
+0,SON1,,Stock,Technology,Sony Group Corp
+0,SSUN,,Stock,Technology,Samsung Electronics 1 GDS Representing 25 Ord Shs
+0,TOMA,,Stock,Auto,Toyota Motor Corp
+0,V,,Stock,Financial,Visa Inc.
+0,XOM,,Stock,Energy,Exxon Mobil Corp
+0,CVX,,Stock,Energy,Chevron Corp.
+0,NEE,,Stock,Energy,NextEra Energy Inc
+0,ORSTED.CO,,Stock,Energy,Oersted AS
+0,SIE.DE,,Stock,Energy,Siemens Aktiengesellschaft
+0,EQIX,,Stock,Real Estate,Equinix Inc
+0,TTDKY,,Stock,Asia,TDK Corporation
+0,000660.KS,,Stock,Asia,SK hynix Inc.
+0,MELI,,Stock,Small Cap,MercadoLibre

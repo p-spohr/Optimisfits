@@ -1,9 +1,9 @@
 
-all_parent_dir = 'all_securities'
+all_parent_dir = 'all_securities_test'
 path_to_all = paste0(getwd(), '/', all_parent_dir)
 all_security_csv = list.files(path_to_all)
 
-target_port_csv = 'example_portfolio_meta.csv'
+target_port_csv = 'example_mixed_portfolio_meta.csv'
 port_meta = read.csv(paste0(getwd(), '/', target_port_csv))
 
 n_stocks = length(port_meta$Ticker)
@@ -57,6 +57,9 @@ for(ticker in port_meta$Ticker) {
 daily_log_returns = na.omit(daily_log_returns)
 head(daily_log_returns)
 
+# apply(daily_log_returns[-1], 2, sum)
+# plot(daily_log_returns$Date, exp(cumsum(daily_log_returns$AAPL)), type='l')
+
 opt_sharpe_ratio_p = function(par, stock_returns, rfr) {
   # print(par)
   # yearly portfolio return
@@ -81,8 +84,8 @@ opt_sharpe_ratio_p = function(par, stock_returns, rfr) {
 }
 stock_n = ncol(daily_log_returns) - 1
 initial_values_p = c(rep(1/stock_n,stock_n))
-lower_b_p = port_meta$Target - 0.05
-upper_b_p = port_meta$Target + 0.05
+lower_b_p = port_meta$Target - 0.02
+upper_b_p = port_meta$Target + 0.02
 RFR = log(1.0001)*250
 
 
@@ -112,9 +115,9 @@ print(current_portfolio)
 sharpe_ratio = function(stock_returns, weights, rfr) {
   portfolio_return = mean(stock_returns %*% weights) * 250
   portfolio_std = as.numeric((t(weights) %*% cov(stock_returns) %*% weights)^0.5) * sqrt(250)
-  print(portfolio_return)
-  print(portfolio_std)
-  print((portfolio_return - rfr) / portfolio_std)
+  print(paste0('mu: ', portfolio_return))
+  print(paste0('sigma: ',portfolio_std))
+  print(paste0('sharpe: ', (portfolio_return - rfr) / portfolio_std))
 }
 
 sharpe_ratio(mat_daily_log_returns, current_portfolio$optimal_weights, RFR)
@@ -122,4 +125,36 @@ sharpe_ratio(mat_daily_log_returns, current_portfolio$optimal_weights, RFR)
 port_meta$optimum_weights = optimum_weights$par
 
 print(port_meta)
+write.csv(port_meta, file = 'example_mixed_portfolio_opti_weights.csv', row.names = FALSE)
 
+# Optimize without target weight bounds
+stock_n = ncol(daily_log_returns) - 1
+initial_values_p = c(rep(1/stock_n,stock_n))
+lower_b = rep(0, stock_n)
+upper_b = rep(1, stock_n)
+RFR = log(1.0001)*250
+
+
+mat_daily_log_returns = as.matrix(daily_log_returns[-1])
+
+head(mat_daily_log_returns)
+
+optimum_weights_unbounded = optim(initial_values_p, 
+                        opt_sharpe_ratio_p, 
+                        stock_returns = mat_daily_log_returns, 
+                        rfr = RFR, 
+                        method = 'L-BFGS-B',
+                        lower = lower_b,
+                        upper = upper_b)
+
+port_meta$optimum_weights = optimum_weights_unbounded$par
+port_meta
+write.csv(port_meta, file = 'example_mixed_portfolio_opti_weights_unbounded.csv', row.names = FALSE)
+
+barplot_meta = port_meta %>%
+  filter(optimum_weights > 0)
+
+
+barplot(barplot_meta$optimum_weights, names.arg = barplot_meta$Ticker)
+
+sharpe_ratio(stock_returns = mat_daily_log_returns, rfr = RFR, weights = port_meta$optimum_weights)
