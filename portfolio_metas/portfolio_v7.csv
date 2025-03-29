@@ -1,0 +1,54 @@
+Port,Ticker,Target,Class,Sector,Name,Geo Zone
+1,US097023BL86,0.034,Bond,Aerospace,"Boeing,3.5%,1mar2045",US
+1,SXRI,0.034,Bond,Corporate,iShares EUR High Yield Corporate Bond UCITS ETF,Europe
+0,US674599CL77,,Bond,Energy,OCCIDENTAL PET. 16/47,
+1,XS1584040445,0.034,Bond,Finance,"IBRD, 2.49% 23mar2047, SEK",Global
+1,US002824BH26,0.034,Bond,Healtcare,"Abbott Laboratories, 4.900%, Due 2046",US
+1,US01609WAW29,0.035,Bond,Multifaced Conglomerate,BABA 4.400% 06Dec2057 Corp (USD),Asia
+1,XS1463155348,0.035,Bond,Telecomunication,"VG $45m,4.6%",Europe
+0,XAG-USD,,Com,Silver,Silver Spot US Dollar,Other
+1,XAU-USD,0.025,Commodity,Gold,Gold Spot US Dollar,Other
+1,XPT-USD,0.025,Commodity,Platinum,Platinum Spot US Dollar,Other
+1,LTC-USD,0.0166,Crypto,Crypto,Litecoin,Other
+1,ETH-USD,0.0167,Crypto,Crypto,Ethereum,Other
+1,BTC-USD,0.0166,Crypto,Crypto,Bitcoin,Other
+1,EXS1,0.049,ETF,Big Blend,iShares Core DAX UCITS ETF (DE),Europe
+1,SXR8,0.049,ETF,Big Blend,iShares Core S&P 500 UCITS ETF,US
+0,EEM,,ETF,Emerging Markets,iShares MSCI Emerging Markets ETF,
+0,EWJ,,ETF,Emerging Markets,iShares MSCI Japan ETF,
+1,MCHI,0.049,ETF,Emerging Markets,iShares MSCI China ETF,Asia
+1,SPYN,0.049,ETF,Energy,SPDR® MSCI Europe Energy UCITS ETF,Europe
+0,XLE,,ETF,Energy,The Energy Select Sector SPDR® Fund,
+1,HEAL,0.049,ETF,Healthcare,iShares Healthcare Innovation UCITS ETF,US
+0,IDNA,,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF (Data from 2019),
+1,DIA,0.049,ETF,Industrials,SPDR Dow Jones Industrial Average ETF Trust,US
+0,INDGW,,ETF,Industrials,Amundi S&P Global Industrials ESG UCITS ETF,
+0,MXI,,ETF,Materials,iShares Global Materials ETF,
+1,STPX,0.049,ETF,Materials,SPDR MSCI Europe Materials UCITS ETF,Europe
+1,AMEM,0.049,ETF,Real Estate,Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR,World
+1,D5BK,0.049,ETF,Real Estate,Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C,Europe
+0,IWM,,ETF,Small Blend,iShares Russell 2000 ETF,
+1,VIOO,0.049,ETF,Small Blend,Vanguard S&P Small-Cap 600 Index Fund ETF,US
+1,QQQ,0.049,ETF,Technology,Invesco QQQ Trust,US
+0,XLK,,ETF,Technology,The Technology Select Sector SPDR® Fund,
+0,EUNL,,ETF,World,iShares Core MSCI World UCITS ETF,
+1,TTDKY,0.01,Stock,Technology,TDK Corporation,Asia
+1,000660.KS,0.01,Stock,Technology,SK hynix Inc.,Asia
+0,BMW,,Stock,Auto,Bayerische Motoren Werke Aktiengesellschaft (BMW.DE),
+0,MBG,,Stock,Auto,Mercedes-Benz Group AG (Dates are Reversed),
+1,TOMA,0.01,Stock,Auto,Toyota Motor Corp,Asia
+1,XOM,0.01,Stock,Energy,Exxon Mobil Corp,US
+0,CVX,,Stock,Energy,Chevron Corp.,
+0,NEE,,Stock,Energy,NextEra Energy Inc,
+0,ORSTED,,Stock,Energy,Oersted AS,
+1,SIE,0.01,Stock,Energy,Siemens Aktiengesellschaft,Europe
+0,PUMP,,Stock,Energy,Propetro Holding Corp,
+1,V,0.01,Stock,Financial,Visa Inc.,US
+1,EQIX,0.01,Stock,Real Estate,Equinix Inc,US
+1,MELI,0.01,Stock,Small Cap,MercadoLibre,South America
+0,AAPL,,Stock,Technology,Apple Inc.,
+0,AMD,,Stock,Technology,"Advanced Micro Devices, Inc.",
+0,GOOGL,,Stock,Technology,Alphabet Inc.,
+1,SON1,0.01,Stock,Technology,Sony Group Corp,Asia
+0,SSUN,,Stock,Technology,Samsung Electronics 1 GDS Representing 25 Ord Shs,
+,,0.9349,,,,

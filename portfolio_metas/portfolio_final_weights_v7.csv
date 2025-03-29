@@ -1,0 +1,32 @@
+"Port","Ticker","Target","Class","Sector","Name","Geo.Zone","Opt_Weights"
+1,"US097023BL86",0.034,"Bond","Aerospace","Boeing,3.5%,1mar2045","US",0.0274204508935064
+1,"SXRI",0.034,"Bond","Corporate","iShares EUR High Yield Corporate Bond UCITS ETF","Europe",0.0366348397330568
+1,"XS1584040445",0.034,"Bond","Finance","IBRD, 2.49% 23mar2047, SEK","Global",0.0264403084443577
+1,"US002824BH26",0.034,"Bond","Healtcare","Abbott Laboratories, 4.900%, Due 2046","US",0.0256045601656017
+1,"US01609WAW29",0.035,"Bond","Multifaced Conglomerate","BABA 4.400% 06Dec2057 Corp (USD)","Asia",0.0264435051796285
+1,"XS1463155348",0.035,"Bond","Telecomunication","VG $45m,4.6%","Europe",0.0286042883153397
+1,"XAU-USD",0.025,"Commodity","Gold","Gold Spot US Dollar","Other",0.035
+1,"XPT-USD",0.025,"Commodity","Platinum","Platinum Spot US Dollar","Other",0.0312945825413916
+1,"LTC-USD",0.0166,"Crypto","Crypto","Litecoin","Other",0.0265924299435615
+1,"ETH-USD",0.0167,"Crypto","Crypto","Ethereum","Other",0.0266768661826915
+1,"BTC-USD",0.0166,"Crypto","Crypto","Bitcoin","Other",0.0266
+1,"EXS1",0.049,"ETF","Big Blend","iShares Core DAX UCITS ETF (DE)","Europe",0.0524108724326346
+1,"SXR8",0.049,"ETF","Big Blend","iShares Core S&P 500 UCITS ETF","US",0.0496129248276174
+1,"MCHI",0.049,"ETF","Emerging Markets","iShares MSCI China ETF","Asia",0.039
+1,"SPYN",0.049,"ETF","Energy","SPDR® MSCI Europe Energy UCITS ETF","Europe",0.059
+1,"HEAL",0.049,"ETF","Healthcare","iShares Healthcare Innovation UCITS ETF","US",0.039
+1,"DIA",0.049,"ETF","Industrials","SPDR Dow Jones Industrial Average ETF Trust","US",0.0465538987601054
+1,"STPX",0.049,"ETF","Materials","SPDR MSCI Europe Materials UCITS ETF","Europe",0.0394868669125636
+1,"AMEM",0.049,"ETF","Real Estate","Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR","World",0.0453562104959033
+1,"D5BK",0.049,"ETF","Real Estate","Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C","Europe",0.039
+1,"VIOO",0.049,"ETF","Small Blend","Vanguard S&P Small-Cap 600 Index Fund ETF","US",0.039
+1,"QQQ",0.049,"ETF","Technology","Invesco QQQ Trust","US",0.054303221903869
+1,"TTDKY",0.01,"Stock","Technology","TDK Corporation","Asia",0.02
+1,"000660.KS",0.01,"Stock","Technology","SK hynix Inc.","Asia",0.02
+1,"TOMA",0.01,"Stock","Auto","Toyota Motor Corp","Asia",0.02
+1,"XOM",0.01,"Stock","Energy","Exxon Mobil Corp","US",0.02
+1,"SIE",0.01,"Stock","Energy","Siemens Aktiengesellschaft","Europe",0.02
+1,"V",0.01,"Stock","Financial","Visa Inc.","US",0.02
+1,"EQIX",0.01,"Stock","Real Estate","Equinix Inc","US",0.02
+1,"MELI",0.01,"Stock","Small Cap","MercadoLibre","South America",0.02
+1,"SON1",0.01,"Stock","Technology","Sony Group Corp","Asia",0.02

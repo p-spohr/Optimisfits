@@ -1,0 +1,34 @@
+"Port","Ticker","Target","Class","Sector","Name","Opt_Weights"
+1,"US097023BL86",0.03333,"Bond","Aerospace","Boeing,3.5%,1mar2045",0.0291735833645768
+1,"SXRI",0.03333,"Bond","Corporate","iShares EUR High Yield Corporate Bond UCITS ETF",0.0298399646374907
+1,"XS1584040445",0.03333,"Bond","Finance","IBRD, 2.49% 23mar2047, SEK",0.0290936963722867
+1,"US002824BH26",0.03333,"Bond","Helathcare","Abbott Laboratories, 4.900%, Due 2046",0.0290361313601954
+1,"US01609WAW29",0.03333,"Bond","Multifaced Conglomerate","BABA 4.400% 06Dec2057 Corp (USD)",0.0290812772272873
+1,"XS1463155348",0.03333,"Bond","Telecomunication","VG $45m,4.6%",0.029236821320654
+1,"XAG-USD",0.0167,"Com","Com","Silver Spot US Dollar",0.0255515891437466
+1,"XAU-USD",0.02,"Com","Gold","Gold Spot US Dollar",0.03
+1,"XPT-USD",0.0166,"Com","Platinum","Platinum Spot US Dollar",0.0250028171842853
+1,"LTC-USD",0.0166,"Crypto","Crypto","Litecoin",0.0237504950322978
+1,"ETH-USD",0.0167,"Crypto","Crypto","Ethereum",0.0220554023264431
+1,"BTC-USD",0.0166,"Crypto","Crypto","Bitcoin",0.0250185568993491
+1,"EXS1",0.049,"ETF","Big Blend","iShares Core DAX UCITS ETF (DE)",0.039
+1,"SXR8",0.049,"ETF","Big Blend","iShares Core S&P 500 UCITS ETF",0.039
+1,"MCHI",0.049,"ETF","Emerging Markets","iShares MSCI China ETF",0.039
+1,"SPYN",0.049,"ETF","Energy","SPDR® MSCI Europe Energy UCITS ETF",0.039
+1,"HEAL",0.049,"ETF","Healthcare","iShares Healthcare Innovation UCITS ETF",0.039
+1,"DIA",0.049,"ETF","Industrials","SPDR Dow Jones Industrial Average ETF Trust",0.039
+1,"STPX",0.049,"ETF","Materials","SPDR MSCI Europe Materials UCITS ETF",0.039
+1,"AMEM",0.049,"ETF","Real Estate","Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR",0.039
+1,"D5BK",0.049,"ETF","Real Estate","Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C",0.039
+1,"VIOO",0.049,"ETF","Small Blend","Vanguard S&P Small-Cap 600 Index Fund ETF",0.039
+1,"QQQ",0.049,"ETF","Technology","Invesco QQQ Trust",0.039
+1,"TTDKY",0.015,"Stock","Asia","TDK Corporation",0.025
+1,"000660.KS",0.015,"Stock","Asia","SK hynix Inc.",0.025
+1,"TOMA",0.015,"Stock","Auto","Toyota Motor Corp",0.023649110802199
+1,"XOM",0.015,"Stock","Energy","Exxon Mobil Corp",0.02386276805728
+1,"ORSTED",0.015,"Stock","Energy","Oersted AS",0.0232973231539255
+1,"SIE",0.015,"Stock","Energy","Siemens Aktiengesellschaft",0.025
+1,"V",0.015,"Stock","Financial","Visa Inc.",0.025
+1,"EQIX",0.015,"Stock","Real Estate","Equinix Inc",0.0247144562030287
+1,"MELI",0.015,"Stock","Small Cap","MercadoLibre",0.025
+1,"SON1",0.015,"Stock","Technology","Sony Group Corp",0.0233630510430532

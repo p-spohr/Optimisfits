@@ -1,0 +1,54 @@
+Port,Ticker,Target,Class,Sector,Name
+1,SXRI,0.029,Bond,Corporate,iShares EUR High Yield Corporate Bond UCITS ETF
+1,US674599CL77,0.029,Bond,Energy,OCCIDENTAL PET. 16/47
+1,XS1463155348,0.029,Bond,Telecomunication,"VG $45m,4.6%"
+1,US097023BL86,0.029,Bond,Aerospace,"Boeing,3.5%,1mar2045"
+1,US01609WAW29,0.029,Bond,Multifaced Conglomerate,BABA 4.400% 06Dec2057 Corp (USD)
+1,XS1584040445,0.029,Bond,Finance,"IBRD, 2.49% 23mar2047, SEK"
+1,US002824BH26,0.029,Bond,Helathcare,"Abbott Laboratories, 4.900%, Due 2046"
+1,XAG-USD,0.0167,Com,Com,Silver Spot US Dollar
+1,XAU-USD,0.0166,Com,Gold,Gold Spot US Dollar
+1,XPT-USD,0.0166,Com,Platinum,Platinum Spot US Dollar
+1,LTC-USD,0.0166,Crypto,Crypto,Litecoin
+1,ETH-USD,0.0167,Crypto,Crypto,Ethereum
+1,BTC-USD,0.0166,Crypto,Crypto,Bitcoin
+1,DIA,0.0265,ETF,Industrials,SPDR Dow Jones Industrial Average ETF Trust
+1,HEAL,0.02571,ETF,Healthcare,iShares Healthcare Innovation UCITS ETF
+1,IDNA,0.02571,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF (Data from 2019)
+1,INDGW,0.02571,ETF,Industrials,Amundi S&P Global Industrials ESG UCITS ETF
+1,MXI,0.02571,ETF,Materials,iShares Global Materials ETF
+1,STPX,0.02571,ETF,Materials,SPDR MSCI Europe Materials UCITS ETF
+1,EXS1,0.02571,ETF,Big Blend,iShares Core DAX UCITS ETF (DE)
+1,EUNL,0.02571,ETF,World,iShares Core MSCI World UCITS ETF
+1,SXR8,0.02571,ETF,Big Blend,iShares Core S&P 500 UCITS ETF
+1,AMEM,0.02571,ETF,Real Estate,Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C EUR
+1,D5BK,0.02571,ETF,Real Estate,Xtrackers FTSE Developed Europe Real Estate UCITS ETF 1C
+1,EEM,0.02571,ETF,Emerging Markets,iShares MSCI Emerging Markets ETF
+1,EWJ,0.026,ETF,Emerging Markets,iShares MSCI Japan ETF
+1,IWM,0.02571,ETF,Small Blend,iShares Russell 2000 ETF
+1,MCHI,0.02571,ETF,Emerging Markets,iShares MSCI China ETF
+1,QQQ,0.02571,ETF,Technology,Invesco QQQ Trust
+1,SPYN,0.026,ETF,Energy,SPDR® MSCI Europe Energy UCITS ETF
+1,XLE,0.02571,ETF,Energy,The Energy Select Sector SPDR® Fund
+1,XLK,0.026,ETF,Technology,The Technology Select Sector SPDR® Fund
+1,IWM,0.026,ETF,Small Blend,iShares Russell 2000 ETF
+1,VIOO,0.02572,ETF,Small Blend,Vanguard S&P Small-Cap 600 Index Fund ETF
+1,BMW,0.007894,Stock,Auto,Bayerische Motoren Werke Aktiengesellschaft (BMW.DE)
+1,MBG,0.00795,Stock,Auto,Mercedes-Benz Group AG (Dates are Reversed)
+1,AAPL,0.007894,Stock,Technology,Apple Inc.
+1,AMD,0.007894,Stock,Technology,"Advanced Micro Devices, Inc."
+1,GOOGL,0.007894,Stock,Technology,Alphabet Inc.
+1,SON1,0.007894,Stock,Technology,Sony Group Corp
+1,SSUN,0.007894,Stock,Technology,Samsung Electronics 1 GDS Representing 25 Ord Shs
+1,TOMA,0.00795,Stock,Auto,Toyota Motor Corp
+1,V,0.007894,Stock,Financial,Visa Inc.
+1,XOM,0.007894,Stock,Energy,Exxon Mobil Corp
+1,CVX,0.007894,Stock,Energy,Chevron Corp.
+1,NEE,0.007894,Stock,Energy,NextEra Energy Inc
+1,ORSTED,0.007894,Stock,Energy,Oersted AS
+1,SIE,0.007895,Stock,Energy,Siemens Aktiengesellschaft
+1,EQIX,0.007894,Stock,Real Estate,Equinix Inc
+1,TTDKY,0.007894,Stock,Asia,TDK Corporation
+1,000660.KS,0.00795,Stock,Asia,SK hynix Inc.
+1,MELI,0.007894,Stock,Small Cap,MercadoLibre
+1,PUMP,0.007894,Stock,Energy,Propetro Holding Corp

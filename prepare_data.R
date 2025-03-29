@@ -74,3 +74,48 @@ for(fp in csv_file_names) {
   df[[2]] = as.numeric(lapply(df[[2]], gsub, pattern = ',', replacement = '.'))
   write.csv(df, paste0(new_folder, '/', fp), row.names = FALSE)
 }
+
+# fix errors of missing data ####
+#################################
+
+# Check if csv files are available
+
+for (ticker in target_portfolio$Ticker) {
+result <- tryCatch(
+
+  {
+    read.csv(paste0('all_cleaned_prices_for_meta', '/', ticker, '.csv'))  # Code that might fail
+  },
+  error = function(e) {
+    print(paste("Error:", ticker))  # Handle the error
+    return(NULL)  # Return a fallback value
+  })
+}
+
+for (ticker in target_portfolio$Ticker) {
+
+  df = read.csv(paste0('all_cleaned_prices_for_meta', '/', ticker, '.csv'))
+  df[[1]] = as.Date(df[[1]], format = '%Y-%m-%d')
+  print(paste0(ticker,' Max: ', min(df[[1]])))
+
+}
+
+for (ticker in target_portfolio$Ticker) {
+
+  df = read.csv(paste0('all_cleaned_prices_for_meta', '/', ticker, '.csv'))
+  df[[1]] = as.Date(df[[1]], format = '%Y-%m-%d')
+  print(paste0(ticker,' Max: ', sum(is.na(df[[2]]))))
+
+}
+
+for (ticker in target_portfolio$Ticker) {
+
+  df = read.csv(paste0('all_cleaned_prices_for_meta', '/', ticker, '.csv'))
+  df[[1]] = as.Date(df[[1]], format = '%Y-%m-%d')
+  head(df)
+  print(paste0(dim(df)))
+
+}
+
+
+

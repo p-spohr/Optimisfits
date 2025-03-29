@@ -1,7 +1,7 @@
 Port,Ticker,Target,Class,Sector,Name
 1,DIA,,ETF,Industrials,SPDR Dow Jones Industrial Average ETF Trust
 1,HEAL,,ETF,Healthcare,iShares Healthcare Innovation UCITS ETF
-1,IDNA,,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF
+1,IDNA,,ETF,Healthcare,iShares Genomics Immunology and Healthcare ETF (Data from 2019)
 1,INDGW,,ETF,Industrials,Amundi S&P Global Industrials ESG UCITS ETF
 1,MXI,,ETF,Materials,iShares Global Materials ETF
 1,STPX,,ETF,Materials,SPDR MSCI Europe Materials UCITS ETF
@@ -34,7 +34,7 @@ Port,Ticker,Target,Class,Sector,Name
 1,IWM,,ETF,Small Blend,iShares Russell 2000 ETF
 1,VIOO,,ETF,Small Blend,Vanguard S&P Small-Cap 600 Index Fund ETF
 1,BMW,,Stock,Auto,Bayerische Motoren Werke Aktiengesellschaft (BMW.DE)
-1,MBG,,Stock,Auto ,Mercedes-Benz Group AG
+1,MBG,,Stock,Auto ,Mercedes-Benz Group AG (Dates are Reversed)
 1,AAPL,,Stock,Technology,Apple Inc.
 1,AMD,,Stock,Technology,"Advanced Micro Devices, Inc."
 1,GOOGL,,Stock,Technology,Alphabet Inc.
@@ -51,3 +51,4 @@ Port,Ticker,Target,Class,Sector,Name
 1,TTDKY,,Stock,Asia,TDK Corporation
 1,000660.KS,,Stock,Asia,SK hynix Inc.
 1,MELI,,Stock,Small Cap,MercadoLibre
+1,PUMP,,Stock,Energy,Propetro Holding Corp
